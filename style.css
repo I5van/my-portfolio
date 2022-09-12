@@ -89,6 +89,9 @@ h6 {
 }
 body{
     background-color: #06113C;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .home{
     margin-top: -400px;
@@ -124,8 +127,7 @@ height: 116px;
     width: 100%;
 }
 .background{
-    width: 100%;
-    height: 103px;
+   
     background-color: #1E3C5B;
     padding-top: 30px;
     display: flex;
@@ -138,7 +140,8 @@ height: 116px;
     font-weight: 400;
     text-align: left;
     color: #ffffff;
-    width:7%;
+    width:100%;
+    height: 150px;
 
 }
 .home__head{
@@ -183,15 +186,18 @@ height: 116px;
 
 
 }
-/* .build{
-    width: 100%;
-    justify-content: center;
-} */
+.build{
+   padding-bottom: 50px;
+}
+main{
+    flex: 1.0 auto;
+}
 .footer{
     width: 100%;
-    /* display: flex;
-    justify-content: center; */
-    height: 500px;;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E3C5B;
+    padding: 10px 50px 10px 50px;
    
 }
 .footer__text{
@@ -202,9 +208,9 @@ font-weight: 400;
 line-height: 39px;
 letter-spacing: 0em;
 text-align: left;
-width: 32%;
+
 color: #ffffff;
-margin-top: 300px;
+
 
 }
 .footer__telephone{
@@ -212,7 +218,7 @@ margin-top: 300px;
     font-size: 24px;
     font-weight: 400;
     text-align: left;
-    width: 70%;
+    
     color: #ffffff;
 }    
 .footer__email{
@@ -222,21 +228,12 @@ font-weight: 400;
 line-height: 29px;
 letter-spacing: 0em;
 text-align: left;
-width: 70%;
+
 color: #ffffff;
 
 }
-.footer__data{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-.footer__p{
-     display: flex;
-     justify-content: center;
-     margin-top: 300px;
-}
+
+
 .nav__links :hover{
     text-decoration: line-through;
 }
@@ -248,7 +245,6 @@ color: #ffffff;
 }
 .works__heading{
    
-    width: 30%;
     font-family: 'Open Sans', sans-serif;
     font-size: 200px;
     font-weight: 400;
@@ -256,9 +252,9 @@ color: #ffffff;
     letter-spacing: 0em;
     text-align: right;
     padding-right: 5%;
-   
-    margin-top: -300px;
+   position: relative;
     color: #ffffff;
+    top: -200px;
 
 
 }
@@ -267,7 +263,7 @@ color: #ffffff;
     justify-content: center;
     justify-content: space-around;
     width: 100%;
-    margin-top: 400px;
+  
 }
 .works__head1{
     width: 24%;
@@ -341,3 +337,8 @@ margin-top: 75px;
     margin-left: 3vw;
 
 }
+.nav_active{
+    text-decoration: line-through;
+    text-decoration-color: #FF8C32!important;
+}
+
