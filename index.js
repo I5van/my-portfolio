@@ -20,5 +20,5 @@ while(i<10){
       
 }
 let k=n/10
-    console.log ()
+    console.log ( )
 
