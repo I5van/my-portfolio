@@ -45,18 +45,27 @@
 //     i+=1
 //     console.log(i);
 // }
-let s = Number(prompt("Введите сумму"));
-let k = Number(prompt("Введите время"));
-let p = Number(prompt("Введите проценты годовых"));// 
-let i = 0;
-while(i<k){
-s=s+(s/100*p)
+// let s = Number(prompt("Введите сумму"));
+// let k = Number(prompt("Введите время"));
+// let p = Number(prompt("Введите проценты годовых"));// 
+// let i = 0;
+// while(i<k){
+// s=s+(s/100*p)
 
- i+=1
+//  i+=1
 
 
  
+// }
+// console.log(s)
+
+let s = Number(prompt("Введите число"));
+let n = (prompt("Введите число"));
+
+let i=0
+while(n<i && i<n+61){
+    i+=1
 }
-console.log(s)
+
 
 
