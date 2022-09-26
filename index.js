@@ -59,13 +59,135 @@
 // }
 // console.log(s)
 
-let s = Number(prompt("Введите число"));
-let n = (prompt("Введите число"));
 
-let i=0
-while(n<i && i<n+61){
-    i+=1
+// let n = Number(prompt("Введите число"));
+//  i=0;
+//  let s =Number(prompt("Введите число"));
+// while( i<n+60){
+//     i+=1;
+//     console.log(i);
+//  доделать на уроке
+// }
+
+// let n = Number(prompt("Введите число"));
+// let m = Number(prompt("Введите число"));
+// if(m>n){
+//     i=n
+// }
+// else{
+//     i=m
+// }
+//  while(m % i !=0 && n % i != 0){
+//     i+=1
+//  }
+//  console.log(i)
+
+// let n = Number(prompt("Введите число"));
+// let m = Number(prompt("Введите число"));
+// i = 0;
+// if(m>n){
+//     i=m
+// }
+// else{
+//     i=n
+// }
+// while(i % m !=0 && i % n != 0){
+//     i+=1
+//  }
+//  console.log(i);
+// let a = Number(prompt("Введите большее число"));
+// let b = Number(prompt("Введите меньшее число"));
+// i=b
+// j=0
+// while(i<a){
+//     i+=1
+//     j+=1
+// }
+// console.log(j)
+//  let s = 10
+//  let t = 7
+//  m=s
+
+//  for(let i = 0; i<6; i++){
+//     s=s+3/100*s
+//     m +=s
+//  }
+//  console.log(m)
+
+// let s1= prompt("Введите страну")
+// let s2 = prompt("Введите ее столицу")
+// alert("Столица государства " + s1 + " - город " + s2)
+// let word= prompt("Введите слово")
+// let index = prompt("Введите символ")
+// // console.log(word [index-1])
+
+
+// let n =prompt("Введите слово")
+// let a = n.length-1
+// console.log(a)
+// let i = 0
+// while(i<a){
+//     console.log(n[i])
+//     i+=1
+// }
+// let n =prompt("Введите слово")
+// let i = n.length -1
+// console.log(i)
+
+
+// while(i>=0){
+//     console.log(n[i])
+//     i-=1
+   
+// }
+
+// let word = prompt("Введите слово из 4 букв")
+// if(word[0]== word[3] && word[1]==word[2]){
+//     alert("это слово палиндром")
+// }
+// else{
+//     alert("это слово не является палиндромом")
+// }
+// let word = prompt("Введите слово")
+// let length = word.length
+// let isPolindrom = true
+// i=0
+// while(i<length/2){
+//     if(word [i]== word [length-i-1]){
+//         isPolindrom = true
+
+//     }
+//     else{
+//         isPolindrom = false
+//     }
+//     i+=1
+    
+// }
+// if(isPolindrom==true){
+//     alert("Это слово палиндром")
+// }
+// else {
+//     alert("Это слово не палиндром")
+// }
+// let str = prompt("Введите информацию")
+// let count0= 0
+// let count1= 0
+// for(let i = 0;i<str.length; i++){
+//     if(str[i]=="0"){
+//         count0++
+//     }
+//     else{
+//         count1++
+//     }
+// }
+// alert(`Количество цифр 1 = ${count1}`)
+// alert(`Количество цифр 0 = ${count0}`)
+// let word = prompt("Введите предложение ")
+// console.log(word.indexOf(`Наполеон`))
+let word = prompt("Введите почтовый ящик ")
+if(word.indexOf(`@`)==-1){
+    alert("Почтовый адрес неправильный")
 }
-
-
-
+else{
+    alert("Почтовый адрес правильный")
+}
