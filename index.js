@@ -476,9 +476,11 @@ let head3 = document.querySelector("#UX-UI-design")
 // 1 блок//
 let firstHead = document.querySelector("#block1-title")
 let firstDescription = document.querySelector("#block1-description")
+let firstBlock = document.querySelector("block1")
 // 2 блок//
 let secondHead = document.querySelector("#block2-title")
 let secondDescription = document.querySelector("#block2-description")
+let secondBlock = document.querySelector("#block2")
 // 3 блок//
 let thirdHead = document.querySelector("#block3-title")
 let thirdDescription = document.querySelector("#block3-description")
@@ -503,4 +505,11 @@ head3.onclick=()=>{
     head1.style.opacity="50%"
     head2.style.opacity="50%"
     head3.style.opacity="100%"
+    firstHead.innerHTML="website design"
+    firstDescription ="Have you ever visited a website that frustrates you and wished you could redesign it? Me too."
+    secondHead.innerHTML="app design"
+    secondDescription.innerHTML="As part of the Google UX design course, I designed a Movies mobile application for seat reservation, answering the problem of queues - among others - at movie theaters."
+    thirdBlock.style.opacity="0%"
+
+
 }

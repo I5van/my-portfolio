@@ -382,3 +382,11 @@ main {
 #interior-design:hover{
     cursor: pointer;
 }
+#block1:hover,#block2:hover,#block3:hover{
+    background-color: #824E37;
+}
+.logo-design{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
