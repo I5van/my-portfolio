@@ -476,7 +476,8 @@ let head3 = document.querySelector("#UX-UI-design")
 // 1 блок//
 let firstHead = document.querySelector("#block1-title")
 let firstDescription = document.querySelector("#block1-description")
-let firstBlock = document.querySelector("block1")
+let firstBlock = document.querySelector("#block1")
+
 // 2 блок//
 let secondHead = document.querySelector("#block2-title")
 let secondDescription = document.querySelector("#block2-description")
@@ -485,11 +486,21 @@ let secondBlock = document.querySelector("#block2")
 let thirdHead = document.querySelector("#block3-title")
 let thirdDescription = document.querySelector("#block3-description")
 let thirdBlock = document.querySelector("#block3")
+function showLogoDesign(){
+    let logoDesign = document.querySelector(".logo-design__wrapper")
+    logoDesign.style.display = "flex"
+    
+}
+let  clearContent = () => {
+    let logoBlock = document.querySElector("#logo-content")
+    logoBlock.display="none"
 
+}
 head1.onclick=()=>{
     head1.style.opacity="100%"
     head2.style.opacity="50%"
     head3.style.opacity="50%"
+    firstBlock.onclick=showLogoDesign
 }
 head2.onclick=()=>{
     head1.style.opacity="50%"
@@ -500,6 +511,8 @@ head2.onclick=()=>{
     firstHead.innerHTML="exhibition design"
     firstDescription.innerHTML="When creating a new idea, I enjoy working with volumes, with my hands, going from crazy ideas to feasible easily. "
     thirdBlock.style.opacity="0%"
+    firstBlock.onclick=null
+    firstBlock= clearContent
 }
 head3.onclick=()=>{
     head1.style.opacity="50%"
@@ -510,6 +523,8 @@ head3.onclick=()=>{
     secondHead.innerHTML="app design"
     secondDescription.innerHTML="As part of the Google UX design course, I designed a Movies mobile application for seat reservation, answering the problem of queues - among others - at movie theaters."
     thirdBlock.style.opacity="0%"
+    firstBlock.onclick=null
+    firstBlock=clearContent
 
 
 }
