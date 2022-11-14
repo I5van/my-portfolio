@@ -471,7 +471,7 @@
 let head1 = document.querySelector("#graphic-design")
 
 console.log(head1.innerHTML)
-let head2= document.querySelector("#interior-design")
+let head2 = document.querySelector("#interior-design")
 let head3 = document.querySelector("#UX-UI-design")
 // 1 блок//
 let firstHead = document.querySelector("#block1-title")
@@ -486,45 +486,69 @@ let secondBlock = document.querySelector("#block2")
 let thirdHead = document.querySelector("#block3-title")
 let thirdDescription = document.querySelector("#block3-description")
 let thirdBlock = document.querySelector("#block3")
-function showLogoDesign(){
+function showLogoDesign() {
     let logoDesign = document.querySelector(".logo-design__wrapper")
     logoDesign.style.display = "flex"
-    
-}
-let  clearContent = () => {
-    let logoBlock = document.querySElector("#logo-content")
-    logoBlock.display="none"
 
 }
-head1.onclick=()=>{
-    head1.style.opacity="100%"
-    head2.style.opacity="50%"
-    head3.style.opacity="50%"
-    firstBlock.onclick=showLogoDesign
+function showPackageDesign() {
+    clearContent()
+    let package = document.querySelector(".package-wrapper")
+    package.style.display = "flex"
 }
-head2.onclick=()=>{
-    head1.style.opacity="50%"
-    head2.style.opacity="100%"
-    head3.style.opacity="50%"
-    secondHead.innerHTML="studio set design"
-    secondDescription.innerHTML="In order to create a welcoming set, curves are used to break the ice much needed to start a conversation with new guests."
-    firstHead.innerHTML="exhibition design"
-    firstDescription.innerHTML="When creating a new idea, I enjoy working with volumes, with my hands, going from crazy ideas to feasible easily. "
-    thirdBlock.style.opacity="0%"
-    firstBlock.onclick=null
-    firstBlock= clearContent
+function showDTP() {
+    clearContent()
+    let DTP = document.querySelector(".DTP-wrapper")
+    DTP.style.display = "flex"
+
 }
-head3.onclick=()=>{
-    head1.style.opacity="50%"
-    head2.style.opacity="50%"
-    head3.style.opacity="100%"
-    firstHead.innerHTML="website design"
-    firstDescription ="Have you ever visited a website that frustrates you and wished you could redesign it? Me too."
-    secondHead.innerHTML="app design"
-    secondDescription.innerHTML="As part of the Google UX design course, I designed a Movies mobile application for seat reservation, answering the problem of queues - among others - at movie theaters."
-    thirdBlock.style.opacity="0%"
-    firstBlock.onclick=null
-    firstBlock=clearContent
+let clearContent = () => {
+    let contents = document.querySelectorAll("[content]")
+    for (let i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none"
+    }
+
+}
+head1.onclick = () => {
+    head1.style.opacity = "100%"
+    head2.style.opacity = "50%"
+    head3.style.opacity = "50%"
+    firstBlock.onclick = showLogoDesign
+    secondBlock.onclick = showPackageDesign
+    thirdBlock.onclick = showDTP
+    firstHead.innerHTML = "logo design"
+    firstDescription.innerHTML = "Whether it be for a jazz production house or a pastry boutique, my logo designs convey simple messages of passion, mirroring true personalities."
+    secondHead.innerHTML="packaging design"
+    secondDescription.innerHTML="A key importance of packaging design of a new product is innovation and modernism and not being afraid of being different from the market."
+    thirdBlock.style.opacity="100%"
+    thirdHead.innerHTML="DTP"
+    thirdDescription="Presentation in design is one of the most important elements to attract potential customers and keep users engaged."
+   
+}
+head2.onclick = () => {
+    head1.style.opacity = "50%"
+    head2.style.opacity = "100%"
+    head3.style.opacity = "50%"
+    secondHead.innerHTML = "studio set design"
+    secondDescription.innerHTML = "In order to create a welcoming set, curves are used to break the ice much needed to start a conversation with new guests."
+    firstHead.innerHTML = "exhibition design"
+    firstDescription.innerHTML = "When creating a new idea, I enjoy working with volumes, with my hands, going from crazy ideas to feasible easily. "
+    thirdBlock.style.opacity = "0%"
+    firstBlock.onclick = null
+    firstBlock.onclick = clearContent
+}
+head3.onclick = () => {
+    head1.style.opacity = "50%"
+    head2.style.opacity = "50%"
+    head3.style.opacity = "100%"
+    firstHead.innerHTML = "website design"
+    firstDescription = "Have you ever visited a website that frustrates you and wished you could redesign it? Me too."
+    secondHead.innerHTML = "app design"
+    secondDescription.innerHTML = "As part of the Google UX design course, I designed a Movies mobile application for seat reservation, answering the problem of queues - among others - at movie theaters."
+    thirdBlock.style.opacity = "0%"
+    firstBlock.onclick = null
+    firstBlock.onclick = clearContent
 
 
 }
+clearContent()
