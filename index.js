@@ -487,6 +487,7 @@ let thirdHead = document.querySelector("#block3-title")
 let thirdDescription = document.querySelector("#block3-description")
 let thirdBlock = document.querySelector("#block3")
 function showLogoDesign() {
+    clearContent()
     let logoDesign = document.querySelector(".logo-design__wrapper")
     logoDesign.style.display = "flex"
 
@@ -510,6 +511,7 @@ let clearContent = () => {
 
 }
 head1.onclick = () => {
+    clearContent()
     head1.style.opacity = "100%"
     head2.style.opacity = "50%"
     head3.style.opacity = "50%"
@@ -523,9 +525,13 @@ head1.onclick = () => {
     thirdBlock.style.opacity="100%"
     thirdHead.innerHTML="DTP"
     thirdDescription="Presentation in design is one of the most important elements to attract potential customers and keep users engaged."
+    // head2.onclick = clearContent
+    // head3.onclick = clearContent
+
    
 }
 head2.onclick = () => {
+    clearContent()
     head1.style.opacity = "50%"
     head2.style.opacity = "100%"
     head3.style.opacity = "50%"
@@ -536,8 +542,11 @@ head2.onclick = () => {
     thirdBlock.style.opacity = "0%"
     firstBlock.onclick = null
     firstBlock.onclick = clearContent
+    // head2.onclick = clearContent
+    // head3.onclick = clearContent
 }
 head3.onclick = () => {
+    clearContent()
     head1.style.opacity = "50%"
     head2.style.opacity = "50%"
     head3.style.opacity = "100%"
@@ -548,6 +557,8 @@ head3.onclick = () => {
     thirdBlock.style.opacity = "0%"
     firstBlock.onclick = null
     firstBlock.onclick = clearContent
+    // head1.onclick = clearContent
+    // head2.onclick = clearContent
 
 
 }

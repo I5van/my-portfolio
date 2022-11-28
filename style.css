@@ -454,3 +454,14 @@ main {
     width: 80%;
 
 }
+.DTP-text{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 50px;
+}
+.DTP-photo{
+    margin-top: 100px;
+}
